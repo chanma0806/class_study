@@ -6,16 +6,16 @@ public class DeviceCommunicationBuilder {
         self.communication = communication
     }
     
-    func setPacketLength(_ length: Int) -> Void {
+    public func setPacketLength(_ length: Int) -> Void {
         self.communication.packetLength = length
     }
-    func setRetryTimes(_ times: Int) -> Void {
+    public func setRetryTimes(_ times: Int) -> Void {
         self.communication.retryTimes = times
     }
-    func setRetryInterval(_ interval: Int) -> Void {
+    public func setRetryInterval(_ interval: Int) -> Void {
         self.communication.retryInterval = interval
     }
-    func getResult() -> DeviceCommunication {
+    public func getResult() -> DeviceCommunication {
         return self.communication
     }
 }

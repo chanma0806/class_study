@@ -1,6 +1,10 @@
 public class DeviceTypeBFactory: DeviceAbstractFactory {
     public func getCommunicaiton() -> DeviceCommunication {
-        return DeviceCoummunicationTypeB()
+        var communication = DeviceCoummunicationTypeB()
+        let builder = DeviceCommunicationBuilder(communication)
+        let director = DeviceCommunicationTypeBDirector(builder)
+        director.constract()
+        return builder.getResult()
     }
     
     public func getEvents() -> [WorkoutEvent] {

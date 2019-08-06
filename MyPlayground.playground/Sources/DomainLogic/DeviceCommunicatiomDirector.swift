@@ -1,9 +1,8 @@
 public protocol DeviceCommunicationDirector {
-    init (_ builder: DeviceCommunicationBuilder) {
-        self.builder = builder
-    }
-    let builder: DeviceCommunicationBuilder
-    let packetLength: Int
-    let retryTimes: Int
-    let retryInterval: Int
+    init (_ builder: DeviceCommunicationBuilder)
+    var builder: DeviceCommunicationBuilder { get }
+    var packetLength: Int { get set }
+    var retryTimes: Int { get set }
+    var retryInterval:Int { get set }
+    func constract() -> Void
 }

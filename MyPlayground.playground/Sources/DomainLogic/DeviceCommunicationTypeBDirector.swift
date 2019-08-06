@@ -1,10 +1,10 @@
 import Foundation
 
-public class DeviceCommunicationTypeADirector: DeviceCommunicationDirector {
+public class DeviceCommunicationTypeBDirector: DeviceCommunicationDirector {
     private let builder: DeviceCommunicationBuilder
-    private let packetLength = 16
-    private let retryTimes = 5
-    private let retryInterval = 10
+    private let packetLength = 32
+    private let retryTimes = 10
+    private let retryInterval = 20
     init(_ builder: DeviceCommunicationBuilder) {
         self.builder = builder
     }

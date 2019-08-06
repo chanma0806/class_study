@@ -16,7 +16,7 @@ public class DeviceFactory {
                 factory = DeviceTypeAFactory()
                 break
         }
-        let communication = factory.getCommunicaiton()
+        var communication = factory.getCommunicaiton()
         let events = factory.getEvents()
         
         return Device(communication: communication, workoutEvents: events)

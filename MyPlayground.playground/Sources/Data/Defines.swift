@@ -4,7 +4,7 @@ public enum WorkoutEvent: Int {
     case marathon = 2
 }
 
-public enum CommunicationState {
+public enum CommunicationState: Int {
     case DISCONNECT = 0
     case REQUEST = 1
     case CONNECTED = 2
